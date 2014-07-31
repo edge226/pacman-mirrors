@@ -88,7 +88,7 @@ parser.add_argument("-g", "--generate", help="generate new mirrorlist",
 parser.add_argument("-m", "--method", help="use generation method",
                     type=str, choices=["rank", "random"])
 parser.add_argument("-b", "--branch", help="use branch name",
-                    type=str, choices=["stable", "testing", "unstable"])
+                    type=str, choices=["stable", "unstable"])
 parser.add_argument("-c", "--country", help="use only mirrors from country[,country,...]",
                     type=str)
 parser.add_argument("-d", "--mirror_dir", help="use path as mirrorlist directory",
@@ -313,7 +313,7 @@ if interactive :
         print("\nError : cannot create", outputMirrorList)
         exit(1)
     fo.write("##\n")
-    fo.write("## Manjaro Linux repository mirrorlist\n")
+    fo.write("## Lucid OS repository mirrorlist\n")
     fo.write("## Generated on ")
     fo.write(datetime.datetime.now().strftime("%d %B %Y %H:%M"))
     fo.write("\n##\n")
@@ -344,7 +344,7 @@ else :
         print("\nError : cannot create", outputMirrorList)
         exit(1)
     fo.write("##\n")
-    fo.write("## Manjaro Linux repository mirrorlist\n")
+    fo.write("## Lucid OS repository mirrorlist\n")
     fo.write("## Generated on ")
     fo.write(datetime.datetime.now().strftime("%d %B %Y %H:%M"))
     fo.write("\n##\n")
